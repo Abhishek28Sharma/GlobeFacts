@@ -14,7 +14,7 @@ const subRegion = document.querySelector('.sub-region')
 const capital = document.querySelector('.capital')
 const borderCountry = document.querySelector('.border-coun')
 const darkModeBtn = document.querySelector('.header-content p')
-console.log(darkModeBtn)
+// console.log(darkModeBtn)
 // for back button function
 const backButton = document.querySelector('.back-button')
 backButton.addEventListener('click', () => {
@@ -68,7 +68,7 @@ fetch(`https://restcountries.com/v3.1/name/${city}?fullText=true`)
     capital.innerText = data.capital.join(', ')
     domain.innerText = data.tld.join(', ')
 
-    console.log(data.borders)
+    // console.log(data.borders)
     data.borders.forEach((code) => {
       // console.log(ele)
       fetch(`
@@ -77,7 +77,7 @@ https://restcountries.com/v3.1/alpha/${code}`)
           return res.json()
         })
         .then(([data]) => {
-          console.log(data)
+          // console.log(data)
           const bCountry = document.createElement('div')
           const bAnchor = document.createElement('a')
           bCountry.classList.add('country')
