@@ -20,13 +20,13 @@ fetch('https://restcountries.com/v3.1/region/asia')
 //
 
 filterByRegion.addEventListener('change', (e) => {
-  console.log(filterByRegion.value)
+  // console.log(filterByRegion.value)
   fetch(`https://restcountries.com/v3.1/region/${filterByRegion.value}`)
     .then((res) => {
       return res.json()
     })
     .then((data) => {
-      console.log(data)
+      // console.log(data)
       renderCountries(data)
     })
     .catch((err) => {
