@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,500,600,700,800" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back" />
+  <link rel="stylesheet" href="country.css" />
+  <script src="country.js" defer></script>
+</head>
+
+<body>
+  <header class="header-container">
+    <div class="header-content">
+      <a href="#">
+        <h2 class="title" onclick="location.href=`/`">Where in the World?</h2>
+      </a>
+      <p><i class="fa-regular fa-moon"></i>&nbsp;&nbsp;<span class="dark-mode-toggle">Dark</span></p>
+    </div>
+  </header>
+
+  <main>
+    <div class="header-content">
+      <div class="back-button">
+        <span class="material-symbols-outlined"> arrow_back </span><span>Back</span>
+      </div>
+    </div>
+
+    <div class="country-details">
+      <div class="country-flag">
+        <div class="skeleton flag-skeleton"></div>
+        <img class="flag-image" src="" />
+      </div>
+      <div class="country-content">
+        <p class="country-name"></p>
+        <div class="more-details">
+          <p><b>Native Name:&nbsp;</b><span class="native-name"></span></p>
+          <p><b>Top Level Domain:&nbsp;</b><span class="domain"></span></p>
+          <p><b>Population:&nbsp;</b><span class="population"></span></p>
+          <p><b>Currencies:&nbsp;</b><span class="currencies"></span></p>
+          <p><b>Region:&nbsp;</b><span class="region"></span></p>
+          <p><b>Language:&nbsp;</b><span class="languages"></span></p>
+          <p><b>Sub Region:&nbsp;</b><span class="sub-region"></span></p>
+          <p><b>Capital:&nbsp;</b><span class="capital"></span></p>
+        </div>
+
+        <div class="border-countries-container">
+          <h3>Border Contries:&nbsp;</h3>
+          <div class="border-coun">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
